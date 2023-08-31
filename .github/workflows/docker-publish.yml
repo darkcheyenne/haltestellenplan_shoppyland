@@ -18,8 +18,8 @@ jobs:
           authkey: tskey-auth-kqRQdX6CNTRL-rzEZF3WrgDNyKhysLUrz5NaLYtMruBEz
       - name: 🔎 DNS Auflösung
         run: ping -c 1 repository.eberli.me
-      - name: 🔎 CURL repository.eberli.me
-        run: curl https://repository.eberli.me
+      # - name: 🔎 CURL repository.eberli.me
+      #   run: curl https://repository.eberli.me
       - name: 🐋 Bau und ⬆️ Upload von Docker Images 
         uses: cloudposse/github-action-docker-build-push@1.13.1
         with:
